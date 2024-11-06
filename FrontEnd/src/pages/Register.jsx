@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom"
+import Footer from "../components/Footer";
 
 
 function Register() {
@@ -29,6 +30,7 @@ function Register() {
             </div>
         </div>
     </div>
+    <Footer/>
     </> );
 }
 

@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom"
+import Footer from "../components/Footer";
 function Login() {
     return ( <>
     {/* Navbar */}
@@ -30,6 +31,7 @@ function Login() {
             </div>
         </div>
     </div>
+    <Footer/>
     </> );
 }
 

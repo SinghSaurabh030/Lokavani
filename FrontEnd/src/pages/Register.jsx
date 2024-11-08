@@ -6,7 +6,7 @@ function Register() {
     return ( <>
     <div className="flex items-center justify-between px-6 md:px-[200px] py-4">
     {/* Logo */}
-    <h1 className="text-lg md:text-xl font-extrabold"><Link to="/">Blog Market</Link></h1>
+    <h1 className="text-lg md:text-xl font-extrabold"><Link to="/">Lokavani</Link></h1>
     
     {/* Options */}
     <div className="md:flex items-center justify-center space-x-2 md:space-x-4">

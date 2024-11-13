@@ -1,8 +1,9 @@
 const express=require('express');
 const app=express();
 const dotenv=require('dotenv');
-const mongoose=require('mongoose')
-
+const mongoose=require('mongoose');
+const router = require('./routes/auth');
+const bodyParser = require("body-parser");
 
 const connectDB=async()=>{
     try {
@@ -15,9 +16,14 @@ const connectDB=async()=>{
 }
 
 
-
-
 //middlewares
+app.use(bodyParser.json()); 
+app.use(bodyParser.urlencoded({extended:true}));
+
+app.use('/api/auth',router);
+
+
+
 dotenv.config();
 const PORT=process.env.PORT;
 
